@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro Invaders</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="menu-container">
+      <div id="menu">
+        <div class="menu-option" onclick="startGame()">Start</div>
+        <div class="menu-option" onclick="endGame()">End</div>
+        <div class="menu-option" onclick="showHighScores()">High Scores</div>
+      </div>
+    </div>
+    <div id="game-container" class="hidden">
+      <div id="game-title">Astro Invaders</div>
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+      <div id="score">Score: 0</div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
